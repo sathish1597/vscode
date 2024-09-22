@@ -25,16 +25,24 @@ export class Config {
         return Config.configuration.get(val) as T;
     }
 
+    private static setSettings(key: string, val: number, isGlobal: boolean = false): Thenable<void> {
+        return Config.configuration.update(key, val, isGlobal);
+    }
+
     public static get getHost(): string {
         return Config.getSettings<string>('host');
     }
 
-    public static get getLocalIp(): string {
-        return Config.getSettings<string>('useLocalIp');
+    public static get getLocalIp(): boolean {
+        return Config.getSettings<boolean>('useLocalIp');
     }
 
     public static get getPort(): number {
         return Config.getSettings<number>('port');
+    }
+
+    public static setPort(port: number): Thenable<void> {
+        return Config.setSettings('port', port);
     }
 
     public static get getRoot(): string {
@@ -109,11 +117,11 @@ export class Config {
         return Config.getSettings<string>('file');
     }
 
-    public static get getMutiRootWorkspaceName(): string {
+    public static get getMultiRootWorkspaceName(): string {
         return Config.getSettings<string>('multiRootWorkspaceName');
     }
 
-    public static setMutiRootWorkspaceName(val: string) {
+    public static setMultiRootWorkspaceName(val: string) {
        return Config.configuration.update('multiRootWorkspaceName', val, false);
     }
 }

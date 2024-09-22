@@ -1,4 +1,4 @@
-_[I'm sorry but I'm now super busy, If you want to be a maintainer of the project please feel me to contact me! You've to be passionate about programming]_
+_[Wanna try [LIVE SERVER++](https://github.com/ritwickdey/vscode-live-server-plus-plus) (BETA) ? It'll enable live changes without saving file.  https://github.com/ritwickdey/vscode-live-server-plus-plus ]_
 
 # Live Server
 
@@ -65,14 +65,24 @@ All settings are now listed here  [Settings Docs](./docs/settings.md).
 
 ## What's new ?
 
-* ### Version 5.4.0 (30.01.19)
-  * Bug fix for fsevents on Visual Code Insiders. 
-  
-* ### Version 5.3.1 (28.11.18)
-  * Event-Stream Package Security Update. 
 
-* ### Version 5.3.0 (27.11.18)
-  * Few Packages are upgraded. 
+* ### Version 5.6.1 (17.04.19)
+  * Fixed `Extension host terminated unexpectedly` *[[#431](https://github.com/ritwickdey/vscode-live-server/issues/431)]*
+
+* ### Version 5.6.0 (17.04.19)
+  * ***[NEW]*** Intregation of `Browser Preview` with `Live Server` *[[#352](https://github.com/ritwickdey/vscode-live-server/pull/352) - Thanks to [Kenneth Auchenberg](https://github.com/auchenberg)]*
+  * ***[NEW]*** Fallback to random port If given port is busy. *[[#330](https://github.com/ritwickdey/vscode-live-server/pull/330) - Thanks to [Ali Almohaya](https://github.com/Almo7aya) ]*
+  * ***[FIXES]***  Moved to `vscode-chokidar` lib for *[#285](https://github.com/ritwickdey/vscode-live-server/issues/285)*.
+  * Doc Fixes  *[[#388](https://github.com/ritwickdey/vscode-live-server/pull/388) - Thanks to [Ted Silbernagel](https://github.com/tedsilb)]*
+
+
+* ### Version 5.5.1 (12.02.19)
+  * ***[Fixes]***  Fixed `Extension host terminated unexpectedly` for MacOS. [[#285](https://github.com/ritwickdey/vscode-live-server/issues/285)]
+  
+* ### Version 5.5.0 (12.02.19)
+  * ***[Fixes]*** Fixed `ignoreFiles` settings [[#255](https://github.com/ritwickdey/vscode-live-server/issues/255)]
+  * Attempt to fix `high cpu load` [[#278](https://github.com/ritwickdey/vscode-live-server/issues/278)]
+
 
 
 ## Changelog
